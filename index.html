@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Sharing with Expiring Link</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>File Sharing with Expiring Download Link</h1>
+    
+    <!-- File Upload Section -->
+    <div class="upload">
+      <div id="drop-zone">
+        Drag and drop your file here or click to upload.
+        <input type="file" id="file-input" hidden />
+      </div>
+      <button id="upload-btn">Upload File</button>
+    </div>
+    
+    <!-- Progress Bar -->
+    <div id="progress-container" class="hidden">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- Uploaded File Details -->
+    <div id="file-details" class="hidden">
+      <p id="file-name"></p>
+      <button id="share-btn">Generate Download Link</button>
+    </div>
+    
+    <!-- Share Section with Expiring Link -->
+    <div id="share-section" class="hidden">
+      <p>Your download link (expires in 24 hours):</p>
+      <a id="download-link" href="#" target="_blank" style="display:none;">Download File</a>
+      <p id="expiry-info"></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
